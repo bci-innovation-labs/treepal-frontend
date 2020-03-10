@@ -1,0 +1,6 @@
+//TODO
+
+
+// SetUserForSession
+// getUserForSession
+// hasSession
