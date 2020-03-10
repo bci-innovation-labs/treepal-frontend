@@ -1,14 +1,9 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, withRouter, Switch, Link } from "react-router-dom";
 
+import IndexContainer from "./indexContainer";
+import NotFound404Container from "./notFound404Container";
 
-function Index(props) {
-  return <h2>Home</h2>;
-}
-
-function NotFound(props) {
-    return <h1>404 Not Found</h1>;
-}
 
 class AppContainer extends Component {
   render() {
@@ -32,8 +27,8 @@ class AppContainer extends Component {
            */}
 
            <Switch>
-               <Route path="/" exact component={Index} />
-               <Route component={NotFound} />
+               <Route path="/" exact component={IndexContainer} />
+               <Route component={NotFound404Container} />
            </Switch>
          </div>
        </Router>
