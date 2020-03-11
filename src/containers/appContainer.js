@@ -5,6 +5,7 @@ import IndexContainer from "./indexContainer";
 import NotFound404Container from "./notFound404Container";
 import RegisterContainer from "./registerContainer";
 import LoginContainer from "./loginContainer";
+import DashboardContainer from "./dashboardContainer";
 
 
 class AppContainer extends Component {
@@ -32,6 +33,7 @@ class AppContainer extends Component {
                <Route path="/" exact component={IndexContainer} />
                <Route path="/register" exact component={RegisterContainer} />
                <Route path="/login" exact component={LoginContainer} />
+               <Route path="/dashboard" exact component={DashboardContainer} />
                <Route component={NotFound404Container} />
            </Switch>
          </div>
