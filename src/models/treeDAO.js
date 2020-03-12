@@ -57,4 +57,19 @@ export default class treeDAO {
         }
         return null;
     }
+
+    updateObjectBySlug(slug, name, price, amount) {
+        const treeArr = this.getList();
+
+        let treeIterator;
+        for (treeIterator of treeArr) {
+            if (treeIterator.slug === slug) {
+                treeIterator.name = name;
+                treeIterator.price = price;
+                treeIterator.amount = amount;
+                this.saveToLocalStorage(treeArr);
+                break;
+            }
+        }
+    }
 }
