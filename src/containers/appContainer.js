@@ -10,6 +10,7 @@ import TreeListContainer from "./treeListContainer";
 import TreeCreateContainer from "./treeCreateContainer";
 import TreeDetailContainer from "./treeDetailContainer";
 import TreeUpdateContainer from "./treeUpdateContainer";
+import TreeDeleteContainer from "./treeDeleteContainer";
 
 
 class AppContainer extends Component {
@@ -42,6 +43,7 @@ class AppContainer extends Component {
                <Route path="/tree-create" exact component={TreeCreateContainer} />
                <Route path="/tree/:slug" exact component={TreeDetailContainer} />
                <Route path="/tree-update/:slug" exact component={TreeUpdateContainer} />
+               <Route path="/tree-delete/:slug" exact component={TreeDeleteContainer} />
                <Route component={NotFound404Container} />
            </Switch>
          </div>

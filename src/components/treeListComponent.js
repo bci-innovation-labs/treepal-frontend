@@ -16,6 +16,7 @@ function priceFormatter(cell, row) {
 function detailsFormatter(cell, row) {
     return (
         <span>
+            <Link to={`/tree-delete/${row.slug}`}>Delete</Link>&nbsp;&nbsp;
             <Link to={`/tree/${row.slug}`}>View</Link>
         </span>
     );
