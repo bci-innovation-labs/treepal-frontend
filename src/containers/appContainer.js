@@ -8,6 +8,7 @@ import LoginContainer from "./loginContainer";
 import DashboardContainer from "./dashboardContainer";
 import TreeListContainer from "./treeListContainer";
 import TreeCreateContainer from "./treeCreateContainer";
+import TreeDetailContainer from "./treeDetailContainer";
 
 
 class AppContainer extends Component {
@@ -38,6 +39,7 @@ class AppContainer extends Component {
                <Route path="/dashboard" exact component={DashboardContainer} />
                <Route path="/tree-list" exact component={TreeListContainer} />
                <Route path="/tree-create" exact component={TreeCreateContainer} />
+               <Route path="/tree/:slug" exact component={TreeDetailContainer} />
                <Route component={NotFound404Container} />
            </Switch>
          </div>
