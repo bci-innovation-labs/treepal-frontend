@@ -6,6 +6,8 @@ import NotFound404Container from "./notFound404Container";
 import RegisterContainer from "./registerContainer";
 import LoginContainer from "./loginContainer";
 import DashboardContainer from "./dashboardContainer";
+import TreeListContainer from "./treeListContainer";
+import TreeCreateContainer from "./treeCreateContainer";
 
 
 class AppContainer extends Component {
@@ -34,6 +36,8 @@ class AppContainer extends Component {
                <Route path="/register" exact component={RegisterContainer} />
                <Route path="/login" exact component={LoginContainer} />
                <Route path="/dashboard" exact component={DashboardContainer} />
+               <Route path="/tree-list" exact component={TreeListContainer} />
+               <Route path="/tree-create" exact component={TreeCreateContainer} />
                <Route component={NotFound404Container} />
            </Switch>
          </div>
